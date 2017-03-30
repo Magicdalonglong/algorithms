@@ -11,13 +11,13 @@ struct TreeNode {
     int val;
     TreeNode* right;
     TreeNode* left;
-    TreeNode(int v) : val(v), right(NULL),left(NULL){} 
+    TreeNode(int v) : val(v), right(NULL),left(NULL){}
 };
 TreeNode* helper(TreeNode* root, int tar, bool* suc);
 
 bool removeBST(TreeNode* root, int tar){
     bool res = false;
-    root = helper(root, tar,&res); 
+    root = helper(root, tar,&res);
     return res;
 }
 
@@ -32,7 +32,7 @@ TreeNode* helper(TreeNode* root, int tar, bool* res){
     else if(tar > root->val)root->right = helper(root->right,tar,res);
     return root;
     
-        
+    
 }
 void helper(vector<int>& res, int i, int tar){
     
@@ -51,22 +51,22 @@ void helper(vector<int>& res, int i, int tar){
         }else {
             q.push(cur * 10 + last - 1);
             q.push(cur * 10 + last + 1);
-        }  
-    }    
+        }
+    }
     
 }
 
 
 bool jump(){
     
-    return rand()%2;    
+    return rand()%2;
 }
 void guaranteeJump(){
     int lv = 0;
     int count = 0;
     while(lv != 1){
-        lv +=(jump()? 1: -1);    
-        cout<<"now lv is "<<lv<<endl;  
+        lv +=(jump()? 1: -1);
+        cout<<"now lv is "<<lv<<endl;
         if(count ++ > 200) break;
     }
     cout<<"finally lv is "<<lv;
@@ -111,7 +111,7 @@ vector<string> frequsing(vector<string>& webs, int k){
         minheap.emplace(w.second,w.first);
         if(minheap.size() > k){
             minheap.erase(minheap.begin());
-        }        
+        }
     }
     vector<string> res;
     for(auto m : minheap)
@@ -122,7 +122,6 @@ vector<string> frequsing(vector<string>& webs, int k){
 }
 
 
-
 bool Twosum(TreeNode* root, int tar){
     if(!root) return false;
     
@@ -130,47 +129,49 @@ bool Twosum(TreeNode* root, int tar){
     TreeNode* temp[2] = {root, root};
     bool turn;
     while(temp[0]){
-            stk[0].push(temp[0]);
-            temp[0] = temp[0] -> left;
-        }
+        stk[0].push(temp[0]);
+        temp[0] = temp[0] -> left;
+    }
     while(temp[1]){
-            stk[1].push(temp[1]);
-            temp[1] = temp[1] -> right;
-        }
-    
-    while(temp[0] || stk[0].size() || temp[1] || stk[1].size()){
         
-        temp[0] = stk[0].top();
-        temp[1] = stk[1].top();
-        if(temp[0] -> val + temp[1] -> val == tar)
-            return 1;
-        turn = temp[0] -> val + temp[1] -> val > tar;
-        temp[turn] = turn ? temp[turn] -> left: temp[turn] -> right;
+        stk[1].push(temp[1]);
+        temp[1] = temp[1] -> right;
+    }
+    
+    temp[0] = stk[0].top();
+    temp[1] = stk[1].top();
+    while(temp[0] && temp[1]){
+        int val1 = temp[0] -> val, val2 = temp[1] -> val;
+        if(val1 + val2 == tar) return true;
+        if(val1 >= val2 ) return false;
+        turn = val1 + val2 > tar;
+        stk[turn].pop();
+        temp[turn] = turn? temp[turn] -> left : temp[turn] -> right;
         while(temp[turn]){
             stk[turn].push(temp[turn]);
-            temp[turn] = turn ? temp[turn] -> right : temp[turn] -> right;
-        }     
-        
-    }  
-    return 0;   
-    
+            temp[turn] = turn ? temp[turn] -> right : temp[turn] -> left;
+        }
+        if(stk[turn].empty()) return false;
+        temp[turn] = stk[turn].top();
+    }
+    return false;
 }
 
 int main() {
     /*
-    TreeNode* r = new TreeNode(10);
-    r -> left = new TreeNode(5);
-    r -> right = new TreeNode(15);
-    r -> left ->left = new TreeNode(1);
-    r -> left->right = new TreeNode(7);
-    
-
-    cout<<"removeBST "<<removeBST(r,4);
-    */
+     TreeNode* r = new TreeNode(10);
+     r -> left = new TreeNode(5);
+     r -> right = new TreeNode(15);
+     r -> left ->left = new TreeNode(1);
+     r -> left->right = new TreeNode(7);
+     
+     
+     cout<<"removeBST "<<removeBST(r,4);
+     */
     // auto res = jumping(100);
     // for(auto r : res) cout<<r << " ";
     srand((unsigned)time(NULL));
-//    guaranteeJump();
+    //    guaranteeJump();
     string a = "a", b= "b";
     string a1 = "aas", a2= "aas";
     cout<<"\ncompare(a,b): "<<compare(&a,&b);
@@ -180,27 +181,27 @@ int main() {
     TreeNode * n3 = n;
     TreeNode * n4 = NULL;
     TreeNode * n5 = NULL;
-
-
+    
+    
     cout<<"\ncompare(n,n2): "<<compare(&n,&n2);
     cout<<"\ncompare(n,n3): "<<compare(&n,&n3);
     cout<<"\ncompare(n4,n5): "<<compare(&n4,&n5)<<endl;
-
+    
     vector<int> num ={12,3,2103,201,21,776,123,223,433,54,5,4,98,5,65,53,1,8,3,0};
     auto res = leadingnum(num);
     for(auto r : res) cout<<r <<" ";
-
+    
     vector<string> we = {"github","github","google","google","googlea","3cschool","github","google",
-"leetcode","githubg","facebook","facebook","facebook","cpprefer","facebook","leetcode","facebook",
-"github","githube","cpprefer","facebook","cpprefer","linkedin","ab","linkedin","b",
-"githuba","githubf","cpprefera","facebook","cpprefera","linkedina","ab","linkedinb","f",
-"githubc","githubd","cpprefer","facebooka","cpprefer","linkedin","ab","linkedin","c"};
+        "leetcode","githubg","facebook","facebook","facebook","cpprefer","facebook","leetcode","facebook",
+        "github","githube","cpprefer","facebook","cpprefer","linkedin","ab","linkedin","b",
+        "githuba","githubf","cpprefera","facebook","cpprefera","linkedina","ab","linkedinb","f",
+        "githubc","githubd","cpprefer","facebooka","cpprefer","linkedin","ab","linkedin","c"};
     auto resw = frequsing(we,8);
     cout<<endl;
     for(auto r : resw)cout<<r<<" ";
-
-
-
+    
+    
+    
     TreeNode * r = new TreeNode(50);
     r -> left = new TreeNode(25);
     r -> left -> left = new TreeNode(13);
@@ -208,7 +209,21 @@ int main() {
     r -> right = new TreeNode(75);
     r -> right -> left = new TreeNode(61);
     r -> right -> right = new TreeNode(88);
-    cout<<"\n twosum(r) is "<<Twosum(r, 38);
+    
+    TreeNode * list = new TreeNode(7);
+    list -> right = new TreeNode(12);
+    list -> right -> right = new TreeNode(16);
+    list -> right -> right -> right = new TreeNode(23);
+    list -> right -> right -> right -> right  = new TreeNode(34);
+    list -> right -> right -> right -> right -> right = new TreeNode(65);
+    
+    
+    cout<<"\n twosum(r,38) is "<<Twosum(r, 38)<<endl;
+    cout<<" twosum(r,37) is "<<Twosum(r, 37)<<endl;
+    cout<<" twosum(list,38) is "<<Twosum(list, 38)<<endl;
+    cout<<" twosum(list,37) is "<<Twosum(list, 37)<<endl;
+    cout<<" twosum(list,41) is "<<Twosum(list, 41)<<endl;
+    
     return 0;
 }
 

@@ -1,0 +1,307 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D8BAC2651E69E37F00DF265A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BAC2641E69E37F00DF265A /* AppDelegate.swift */; };
+		D8BAC2671E69E37F00DF265A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BAC2661E69E37F00DF265A /* ViewController.swift */; };
+		D8BAC26A1E69E37F00DF265A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8BAC2681E69E37F00DF265A /* Main.storyboard */; };
+		D8BAC26C1E69E37F00DF265A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8BAC26B1E69E37F00DF265A /* Assets.xcassets */; };
+		D8BAC26F1E69E37F00DF265A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8BAC26D1E69E37F00DF265A /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D8BAC2611E69E37F00DF265A /* My Ebay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Ebay.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8BAC2641E69E37F00DF265A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D8BAC2661E69E37F00DF265A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D8BAC2691E69E37F00DF265A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D8BAC26B1E69E37F00DF265A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8BAC26E1E69E37F00DF265A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D8BAC2701E69E37F00DF265A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8BAC25E1E69E37F00DF265A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D8BAC2581E69E37F00DF265A = {
+			isa = PBXGroup;
+			children = (
+				D8BAC2631E69E37F00DF265A /* My Ebay */,
+				D8BAC2621E69E37F00DF265A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D8BAC2621E69E37F00DF265A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8BAC2611E69E37F00DF265A /* My Ebay.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8BAC2631E69E37F00DF265A /* My Ebay */ = {
+			isa = PBXGroup;
+			children = (
+				D8BAC2641E69E37F00DF265A /* AppDelegate.swift */,
+				D8BAC2661E69E37F00DF265A /* ViewController.swift */,
+				D8BAC2681E69E37F00DF265A /* Main.storyboard */,
+				D8BAC26B1E69E37F00DF265A /* Assets.xcassets */,
+				D8BAC26D1E69E37F00DF265A /* LaunchScreen.storyboard */,
+				D8BAC2701E69E37F00DF265A /* Info.plist */,
+			);
+			path = "My Ebay";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8BAC2601E69E37F00DF265A /* My Ebay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8BAC2731E69E37F00DF265A /* Build configuration list for PBXNativeTarget "My Ebay" */;
+			buildPhases = (
+				D8BAC25D1E69E37F00DF265A /* Sources */,
+				D8BAC25E1E69E37F00DF265A /* Frameworks */,
+				D8BAC25F1E69E37F00DF265A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "My Ebay";
+			productName = "My Ebay";
+			productReference = D8BAC2611E69E37F00DF265A /* My Ebay.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8BAC2591E69E37F00DF265A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Lei Duan";
+				TargetAttributes = {
+					D8BAC2601E69E37F00DF265A = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = QN29254XKX;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D8BAC25C1E69E37F00DF265A /* Build configuration list for PBXProject "My Ebay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D8BAC2581E69E37F00DF265A;
+			productRefGroup = D8BAC2621E69E37F00DF265A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8BAC2601E69E37F00DF265A /* My Ebay */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D8BAC25F1E69E37F00DF265A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8BAC26F1E69E37F00DF265A /* LaunchScreen.storyboard in Resources */,
+				D8BAC26C1E69E37F00DF265A /* Assets.xcassets in Resources */,
+				D8BAC26A1E69E37F00DF265A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8BAC25D1E69E37F00DF265A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8BAC2671E69E37F00DF265A /* ViewController.swift in Sources */,
+				D8BAC2651E69E37F00DF265A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D8BAC2681E69E37F00DF265A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8BAC2691E69E37F00DF265A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D8BAC26D1E69E37F00DF265A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8BAC26E1E69E37F00DF265A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D8BAC2711E69E37F00DF265A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D8BAC2721E69E37F00DF265A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8BAC2741E69E37F00DF265A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QN29254XKX;
+				INFOPLIST_FILE = "My Ebay/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Lei-Duan.My-Ebay";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D8BAC2751E69E37F00DF265A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QN29254XKX;
+				INFOPLIST_FILE = "My Ebay/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Lei-Duan.My-Ebay";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8BAC25C1E69E37F00DF265A /* Build configuration list for PBXProject "My Ebay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8BAC2711E69E37F00DF265A /* Debug */,
+				D8BAC2721E69E37F00DF265A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8BAC2731E69E37F00DF265A /* Build configuration list for PBXNativeTarget "My Ebay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8BAC2741E69E37F00DF265A /* Debug */,
+				D8BAC2751E69E37F00DF265A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D8BAC2591E69E37F00DF265A /* Project object */;
+}

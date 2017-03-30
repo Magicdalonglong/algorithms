@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "lc452/main.cpp"
+            timestampString = "509149314.138688"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "findMinArrowShots(vector&lt;pair&lt;int, int&gt;&gt;&amp; points)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "findMinArrowShots(std::__1::vector&lt;std::__1::pair&lt;int, int&gt;, std::__1::allocator&lt;std::__1::pair&lt;int, int&gt; &gt; &gt;&amp;)"
+                  moduleName = "lc452"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Leigh/Documents/CPP_Project/lc452/lc452/main.cpp"
+                  timestampString = "509149480.755249"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "findMinArrowShots(std::__1::vector&lt;std::__1::pair&lt;int, int&gt;, std::__1::allocator&lt;std::__1::pair&lt;int, int&gt; &gt; &gt;&amp;)::$_0::operator()(std::__1::pair&lt;int, int&gt; const&amp;, std::__1::pair&lt;int, int&gt; const&amp;) const"
+                  moduleName = "lc452"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Leigh/Documents/CPP_Project/lc452/lc452/main.cpp"
+                  timestampString = "509149480.757825"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "lc452/main.cpp"
+            timestampString = "509149485.193493"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "findMinArrowShots(vector&lt;pair&lt;int, int&gt;&gt;&amp; points)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

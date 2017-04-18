@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0820"
+   LastUpgradeVersion = "0830"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D8A4544D1E56DAD7005BD2E7"
+               BlueprintIdentifier = "D87759751E9EB2680049A6DD"
                BuildableName = "lc421"
                BlueprintName = "lc421"
                ReferencedContainer = "container:lc421.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D8A4544D1E56DAD7005BD2E7"
+            BlueprintIdentifier = "D87759751E9EB2680049A6DD"
             BuildableName = "lc421"
             BlueprintName = "lc421"
             ReferencedContainer = "container:lc421.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D8A4544D1E56DAD7005BD2E7"
+            BlueprintIdentifier = "D87759751E9EB2680049A6DD"
             BuildableName = "lc421"
             BlueprintName = "lc421"
             ReferencedContainer = "container:lc421.xcodeproj">
@@ -74,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D8A4544D1E56DAD7005BD2E7"
+            BlueprintIdentifier = "D87759751E9EB2680049A6DD"
             BuildableName = "lc421"
             BlueprintName = "lc421"
             ReferencedContainer = "container:lc421.xcodeproj">

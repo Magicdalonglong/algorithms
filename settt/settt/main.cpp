@@ -1,4 +1,5 @@
 #include <unordered_map>
+#include <unordered_set>
 #include <iostream>
 #include <queue>
 #include <stack>
@@ -61,6 +62,44 @@ bool jump(){
     
     return rand()%2;    
 }
+
+
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    string longestPalindrome(string s) {
+        if(s.empty()) return "";
+        int index = 0, len = 1, size = s.size();
+        for(int i = 1; i < size - 1; i++){
+            // find max palindro from i as the pivot;
+            int left = i - 1, right = i + 1;
+            while(left >=0 && right < size && s[left] == s[right]){left --; right ++;}
+            if((i - left) * 2 - 1 > len){
+                cout<<"updating:  left, right is "<<left<<" "<<right;
+                len = (i - left) * 2 - 1;
+                index = left + 1;
+            }
+            
+            left = i-1, right = i;
+            while(left >=0 && right < size && s[left] == s[right]){left --; right ++;}
+            if((i - left) * 2 > len){
+                len = (i - left) * 2 ;
+                index = left + 1;
+            }
+        }
+        return s.substr(index, len);
+        
+    }
+};
+
 void guaranteeJump(){
     int lv = 0;
     int count = 0;
@@ -156,59 +195,31 @@ bool Twosum(TreeNode* root, int tar){
     
 }
 
-int main() {
-    /*
-    TreeNode* r = new TreeNode(10);
-    r -> left = new TreeNode(5);
-    r -> right = new TreeNode(15);
-    r -> left ->left = new TreeNode(1);
-    r -> left->right = new TreeNode(7);
+
+
+string sortletterandnum(string s) {
+    set<char> set1, set2;
+    for(auto c : s){
+        if(isdigit(c)) set1.insert(c);
+        else if (isalpha(c)) set2.insert(c);
+    }
+    set<char>::iterator it1 = set1.begin(), it2 = set2.begin();
+    for(auto &c : s){
+        if(isdigit(c)) c = *(it1++);
+        else if (isalpha(c)) c= *(it2++);
+    }
+    return s;
+    
+}
+
+
     
 
-    cout<<"removeBST "<<removeBST(r,4);
-    */
-    // auto res = jumping(100);
-    // for(auto r : res) cout<<r << " ";
-    srand((unsigned)time(NULL));
-//    guaranteeJump();
-    string a = "a", b= "b";
-    string a1 = "aas", a2= "aas";
-    cout<<"\ncompare(a,b): "<<compare(&a,&b);
-    cout<<"\ncompare(aas,aas): "<<compare(&a1,&a2);
-    TreeNode * n = new TreeNode(0);
-    TreeNode * n2 = new TreeNode(0);
-    TreeNode * n3 = n;
-    TreeNode * n4 = NULL;
-    TreeNode * n5 = NULL;
+int main() {
+    Solution s;
+  // cout<<s.longestPalindrome("cbbd");
+      int *p = new int[123];
+      for()
 
-
-    cout<<"\ncompare(n,n2): "<<compare(&n,&n2);
-    cout<<"\ncompare(n,n3): "<<compare(&n,&n3);
-    cout<<"\ncompare(n4,n5): "<<compare(&n4,&n5)<<endl;
-
-    vector<int> num ={12,3,2103,201,21,776,123,223,433,54,5,4,98,5,65,53,1,8,3,0};
-    auto res = leadingnum(num);
-    for(auto r : res) cout<<r <<" ";
-
-    vector<string> we = {"github","github","google","google","googlea","3cschool","github","google",
-"leetcode","githubg","facebook","facebook","facebook","cpprefer","facebook","leetcode","facebook",
-"github","githube","cpprefer","facebook","cpprefer","linkedin","ab","linkedin","b",
-"githuba","githubf","cpprefera","facebook","cpprefera","linkedina","ab","linkedinb","f",
-"githubc","githubd","cpprefer","facebooka","cpprefer","linkedin","ab","linkedin","c"};
-    auto resw = frequsing(we,8);
-    cout<<endl;
-    for(auto r : resw)cout<<r<<" ";
-
-
-
-    TreeNode * r = new TreeNode(50);
-    r -> left = new TreeNode(25);
-    r -> left -> left = new TreeNode(13);
-    r -> left -> right = new TreeNode(38);
-    r -> right = new TreeNode(75);
-    r -> right -> left = new TreeNode(61);
-    r -> right -> right = new TreeNode(88);
-    cout<<"\n twosum(r) is "<<Twosum(r, 38);
-    return 0;
 }
 

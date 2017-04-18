@@ -14,10 +14,12 @@ private:
     
     int curfr = 0;
     set<request*> q;
-    Elevator();
+    Elevator() {}
+    Elevator(Elevator const&);              // Don't Implement.
+    void operator=(Elevator const&);
 public:
     
-    static Elevator getinstace(){
+    static Elevator& getinstace(){
         static Elevator instance;
         return instance;
     }
@@ -37,6 +39,12 @@ public:
         }
         
     }
+    void processall(){
+        while(q.size()){
+            process();
+        }
+        
+    }
     request* getrequest(){
         request* res;
         int dict = INT_MAX;
@@ -52,21 +60,18 @@ public:
         return res;
         
     }
-    
-    
-    
 };
 
 int main(){
-    Elevator e = Elevator::getinstace();
+    
     srand((unsigned)time(NULL));
     for(int i = 0; i< 10; i++){
-        e.addrequest(i);
+        int d = rand()%100;
+        cout<<"adding request: "<<d<<endl;
+        Elevator::getinstace().addrequest(d);
     }
-    
-    e.process();
-    
-    
+    cout<<"\nprocess all :\n";
+    Elevator::getinstace().processall();
     
 }
 

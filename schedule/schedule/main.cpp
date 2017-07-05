@@ -399,33 +399,36 @@ void schedule2(int n){
     }
 }
 
-class Solution11 {
+
+
+
+class Solution_ {
 public:
-    int uniquePathsWithObstacles(vector<vector<int>>& obstacleGrid) {
-        if(obstacleGrid.empty()) return 0;
-        int m = obstacleGrid.size(), n = obstacleGrid[0].size();
-        auto mat = obstacleGrid;
-        if(obstacleGrid[0][0] | obstacleGrid[m - 1][n - 1]) return 0;
-        mat[0][0] = 1;
-        for(int i = 0 ;i < m; i++)
-            for(int j = 0; j < n; j++)
-                if(obstacleGrid[i][j] == 0 && (i | j) != 0) mat[i][j] = (i > 0?mat[i - 1][j] : 0) + (j > 0?mat[i][j - 1] : 0);
-        return mat[m - 1][n - 1];
+    void reverseWords(string &s) {
+        reverse(s.begin(), s.end());
+        int low = s.find_first_not_of(32), index = 0;
+        for(int left = low, i = low; i <= s.size(); i++){
+            if(i == s.size() || s[i] == 32){
+                reverse(s.begin() + left, s.begin() + i);
+                for(int k = left; k < i; k++)
+                    s[index++] = s[k];
+                if(index < s.size())s[index++] = 32;
+                while(i < s.size() && s[i] == 32) i++;
+                left = i;
+            }
+        }
+        s.resize(index);
     }
 };
 
 
+
 int main() {
   
-    //  schedule(9);
- //   schedule2(10);
-//    vector<vector<int>> mat = {{0,0}, {1,0}};
-//    
-//    Solution11 s;
-//    cout<<s.uniquePathsWithObstacles(mat);
-    TreeNode* p = new TreeNode(123);
-    TreeNode* p2 = p;
-    delete p;
-    cout<<p2->val;
+    Solution_ s;
+    string st = "   blue  sky   im   ";
+    s.reverseWords(st);
+    cout<<st;
+    cout<<endl;
     return 0;
 }

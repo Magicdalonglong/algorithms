@@ -1,0 +1,14 @@
+<%@ page import="time.h" session="false" %>
+<html>
+<head>
+    <title>Sample CSP (C++ Server Pages) page</title>
+    <meta name="description" value="This is a sample on how to write C++ Server Pages">
+    <meta name="keywords" value="C++, Server, Pages">
+</head>
+<body>
+<% time_t now = time(NULL); %> 
+Hello World!
+This is a sample CSP (C++ Server Page)!
+Local time <b><%= ctime(&now) %></b>
+</body>
+</html>
